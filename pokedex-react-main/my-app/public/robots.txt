@@ -1,0 +1,7 @@
+# Arquivo robots.txt para controle de rastreamento de bots
+# Consulte https://www.robotstxt.org/robotstxt.html para mais informações
+
+# User-agent: * especifica que as regras se aplicam a todos os agentes de usuário (bots)
+# Disallow: indica que nenhum rastreamento é permitido na raiz do site
+User-agent: *
+Disallow:

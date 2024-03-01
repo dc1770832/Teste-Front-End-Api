@@ -1,0 +1,155 @@
+/* Define margens padrão como 0 para todos os elementos */
+* {
+  margin: 0px;
+}
+
+/* Estiliza a barra de navegação */
+nav {
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* Estiliza a imagem da barra de navegação */
+.navbar-img {
+  width: 160px;
+}
+
+/* Estiliza o contêiner da barra de pesquisa */
+.searchbar-container {
+  display: flex;
+  margin: 0px auto;
+  padding: 0 20px;
+  align-items: center;
+}
+
+/* Estiliza a barra de pesquisa */
+.searchbar {
+  background-color: white;
+  margin-right: 20px;
+}
+
+/* Estiliza o campo de input da barra de pesquisa */
+.searchbar input {
+  padding: 10px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+  border: none;
+}
+
+/* Estiliza o botão da barra de pesquisa */
+.searchbar-btn button {
+  background-color: #0e6f9f;
+  border: none;
+  border-radius: 10px;
+  height: 44px;
+  color: white;
+  padding: 10px 12px;
+}
+
+/* Estiliza o cabeçalho da Pokedex */
+.pokedex-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+/* Estiliza a grade de Pokémons na Pokedex */
+.pokedex-grid {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* Estiliza o cartão de cada Pokémon na Pokedex */
+.pokemon-card {
+  display: flex;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+}
+
+/* Estiliza a imagem do Pokémon no cartão */
+.pokemon-image {
+  width: 70px;
+  height: 70px;
+  margin-right: 10px;
+}
+
+/* Estiliza o contêiner da imagem do Pokémon */
+.pokemon-image-container {
+  padding: 0px 5px;
+}
+
+/* Estiliza o corpo do cartão do Pokémon */
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px 10px 10px 0px;
+  flex: 1;
+}
+
+/* Estiliza a parte superior do cartão do Pokémon */
+.card-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Estiliza o título do Pokémon no cartão */
+.card-top h3 {
+  text-transform: capitalize;
+}
+
+/* Estiliza a parte inferior do cartão do Pokémon */
+.card-bottom {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Estiliza os tipos de Pokémon no cartão */
+.pokemon-type {
+  display: flex;
+}
+
+/* Estiliza o texto dos tipos de Pokémon no cartão */
+.pokemon-type-text {
+  margin-right: 10px;
+  text-transform: capitalize;
+}
+
+/* Estiliza o contêiner de paginação */
+.pagination-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/* Estiliza o botão de coração no cartão do Pokémon */
+.pokemon-heart-btn {
+  border: none;
+  background-color: white;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.25);
+  padding: 4px;
+  cursor: pointer;
+  align-items: center;
+}
+
+/* Estiliza o texto quando nenhum Pokémon é encontrado */
+.not-found-text {
+  text-align: center;
+  font-size: 1.25rem;
+  padding: 20px;
+}
+
+/* Estiliza a classe App */
+.App {
+  text-align: center;
+}

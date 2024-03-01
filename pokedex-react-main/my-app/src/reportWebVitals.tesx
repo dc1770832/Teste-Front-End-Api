@@ -1,0 +1,18 @@
+// Função para relatar métricas da web
+const reportWebVitals = onPerfEntry => {
+  // Verifica se a função de entrada é válida e uma instância de função
+  if (onPerfEntry && onPerfEntry instanceof Function) {
+    // Importa as funções de medição de métricas do pacote 'web-vitals'
+    import('web-vitals').then(({ getCLS, getFID, getFCP, getLCP, getTTFB }) => {
+      // Chama as funções de medição passando a função de entrada
+      getCLS(onPerfEntry);
+      getFID(onPerfEntry);
+      getFCP(onPerfEntry);
+      getLCP(onPerfEntry);
+      getTTFB(onPerfEntry);
+    });
+  }
+};
+
+// Exporta a função 'reportWebVitals' para ser usada em outros lugares do aplicativo
+export default reportWebVitals;

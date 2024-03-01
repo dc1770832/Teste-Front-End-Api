@@ -1,0 +1,23 @@
+# Veja https://help.github.com/articles/ignoring-files/ para mais informações sobre a ignorar arquivos.
+
+# Dependências
+/node_modules          # Pasta que contém as dependências instaladas pelo npm ou yarn
+/.pnp                   # Arquivo relacionado à resolução de dependências do Plug'n'Play do Yarn
+.pnp.js                 # Arquivo relacionado à resolução de dependências do Plug'n'Play do Yarn
+
+# Testes
+/coverage               # Pasta que armazena os resultados de cobertura de código
+
+# Produção
+/build                  # Pasta que armazena os arquivos de produção gerados durante a construção do projeto
+
+# Diversos
+.DS_Store               # Arquivo específico do macOS que armazena informações sobre a exibição de pastas
+.env.local              # Arquivo de configuração local de variáveis de ambiente
+.env.development.local  # Arquivo de configuração local de variáveis de ambiente para ambiente de desenvolvimento
+.env.test.local         # Arquivo de configuração local de variáveis de ambiente para ambiente de teste
+.env.production.local    # Arquivo de configuração local de variáveis de ambiente para ambiente de produção
+
+npm-debug.log*          # Logs de depuração gerados pelo npm
+yarn-debug.log*         # Logs de depuração gerados pelo yarn
+yarn-error.log*         # Logs de erros gerados pelo yarn
